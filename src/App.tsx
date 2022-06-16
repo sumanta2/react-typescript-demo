@@ -10,6 +10,7 @@ import PersonList from './components/PersonList';
 import Button from './components/Button';
 import Input from './components/Input';
 import Container from './components/Container';
+import Loggedin from './components/State/Loggedin';
 
 function App() {
   const data=[
@@ -33,6 +34,7 @@ function App() {
       <Button handleClick={(event, id)=> { console.log("Button clicked"+event+id)}}></Button>
       <Input value='' handleChange={(event)=>{console.log(event)}} />
       <Container style={{border:'1px solid black',padding:'1rem'}}/>
+      <Loggedin />
 
     </div>
   );
