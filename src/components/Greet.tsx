@@ -5,10 +5,11 @@ type GreetProps={    //follow a rule type use for application and interfaces use
 }
 
 const Greet = (props:GreetProps) => {
+  const {messageCount = 0} =props  //here 0 default value of messageCount variable
   return (
     <div>
         {
-            props.isLoggedIn ? <h2>Welcome {props.name}! You have 10 unread messages</h2> : <h2>Welcome Guest</h2>
+            props.isLoggedIn ? <h2>Welcome {props.name}! You have {messageCount} unread messages</h2> : <h2>Welcome Guest</h2>
         }
         
     </div>
