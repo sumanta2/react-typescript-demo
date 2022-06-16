@@ -7,7 +7,7 @@ type AuthUser = {
 
 const User = () => {
     //in useState <AuthUser | null> indicate later useState store AuthUser or null type Variable/values
-    const [user,setUser]= useState<AuthUser | null>(null)
+    const [user,setUser]= useState<AuthUser>({} as AuthUser)   //{} declare blank object of AuthUser type
     const handleLogin = () =>{
         setUser(
             {
