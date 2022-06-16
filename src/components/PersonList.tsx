@@ -1,8 +1,6 @@
+import {Name} from './Person.types'  //here import Name type from Person.types.ts file
 type PersonListProps ={
-    names:{
-        first:string
-        last:string
-    }[]
+    names:Name[]
 }
 const PersonList = (props:PersonListProps) => 
 {
