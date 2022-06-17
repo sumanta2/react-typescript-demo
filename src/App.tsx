@@ -12,6 +12,8 @@ import Input from './components/Input';
 import Container from './components/Container';
 import Loggedin from './components/State/Loggedin';
 import Counter from './components/State/Counter';
+import { ThemeContextProvider } from './components/context/ThemeContext';
+import Box from './components/context/Box';
 
 function App() {
   const data=[
@@ -31,12 +33,16 @@ function App() {
      <Heading>I am heading</Heading>
      <Oscar><Heading> Oscar goes to Leomardo Dicpario!</Heading></Oscar>
       <Greet name="Student's" isLoggedIn={false} />   messageCount set optional attribute so it does not generate error */}
-      <PersonList names={data} />
+      {/* <PersonList names={data} />
       <Button handleClick={(event, id)=> { console.log("Button clicked"+event+id)}}></Button>
       <Input value='' handleChange={(event)=>{console.log(event)}} />
       <Container style={{border:'1px solid black',padding:'1rem'}}/>
-      <Loggedin />
+      <Loggedin /> */}
       <Counter/>
+
+      <ThemeContextProvider>
+        <Box/>
+      </ThemeContextProvider>
 
     </div>
   );
