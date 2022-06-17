@@ -2,4 +2,4 @@ Following playlist: https://youtube.com/playlist?list=PLC3y8-rFHvwi1AXijGTKM0BKt
 
 Create react project with typescript: npx create-react-app react-typescript-demo --template typescript
 
-vdo: 12
+vdo: 13
