@@ -19,17 +19,19 @@ import PersonList from './components/PersonList';
 // import DomRef from './components/Ref/DomRef';
 // import MutableRef from './components/Ref/MutableRef';
 import { Counter } from './components/class/Counter';
+import { Private } from './components/auth/Private';
+import Profile from './components/auth/Profile';
 function App() {
-  const data=[
-    {
-      first:"sumanta",
-      last:"gorai"
-    },
-    { first:"subhas",
-      last:"Gorai"
-    }
+  // const data=[
+  //   {
+  //     first:"sumanta",
+  //     last:"gorai"
+  //   },
+  //   { first:"subhas",
+  //     last:"Gorai"
+  //   }
     
-  ]
+  // ]
  
   return (
     <div className="App">
@@ -54,8 +56,7 @@ function App() {
       <DomRef/>
       <MutableRef/> */}
       <Counter message='I this' />
-
-    
+      <Private isLoggedIn={true} component={Profile} />
 
     </div>
   );
