@@ -16,6 +16,8 @@ import { ThemeContextProvider } from './components/context/ThemeContext';
 import Box from './components/context/Box';
 import { UserContextProvider } from './components/context/UserContext';
 import User from './components/context/User';
+import DomRef from './components/Ref/DomRef';
+import MutableRef from './components/Ref/MutableRef';
 function App() {
   const data=[
     {
@@ -48,6 +50,10 @@ function App() {
       <UserContextProvider>
         <User/>
       </UserContextProvider>
+      <DomRef/>
+      <MutableRef/>
+
+    
 
     </div>
   );
