@@ -14,7 +14,8 @@ import Loggedin from './components/State/Loggedin';
 import Counter from './components/State/Counter';
 import { ThemeContextProvider } from './components/context/ThemeContext';
 import Box from './components/context/Box';
-
+import { UserContextProvider } from './components/context/UserContext';
+import User from './components/context/User';
 function App() {
   const data=[
     {
@@ -38,11 +39,15 @@ function App() {
       <Input value='' handleChange={(event)=>{console.log(event)}} />
       <Container style={{border:'1px solid black',padding:'1rem'}}/>
       <Loggedin /> */}
-      <Counter/>
+      {/* <Counter/>
 
       <ThemeContextProvider>
         <Box/>
-      </ThemeContextProvider>
+      </ThemeContextProvider> */}
+
+      <UserContextProvider>
+        <User/>
+      </UserContextProvider>
 
     </div>
   );
