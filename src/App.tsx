@@ -7,17 +7,18 @@ import PersonList from './components/PersonList';
 // import Status from './components/Status';
 // import Heading from './components/Heading';
 // import Oscar from './components/Oscar';
-import Button from './components/Button';
-import Input from './components/Input';
-import Container from './components/Container';
-import Loggedin from './components/State/Loggedin';
-import Counter from './components/State/Counter';
-import { ThemeContextProvider } from './components/context/ThemeContext';
-import Box from './components/context/Box';
-import { UserContextProvider } from './components/context/UserContext';
-import User from './components/context/User';
-import DomRef from './components/Ref/DomRef';
-import MutableRef from './components/Ref/MutableRef';
+// import Button from './components/Button';
+// import Input from './components/Input';
+// import Container from './components/Container';
+// import Loggedin from './components/State/Loggedin';
+// //import Counter from './components/State/Counter';
+// import { ThemeContextProvider } from './components/context/ThemeContext';
+// import Box from './components/context/Box';
+// import { UserContextProvider } from './components/context/UserContext';
+// import User from './components/context/User';
+// import DomRef from './components/Ref/DomRef';
+// import MutableRef from './components/Ref/MutableRef';
+import { Counter } from './components/class/Counter';
 function App() {
   const data=[
     {
@@ -47,11 +48,12 @@ function App() {
         <Box/>
       </ThemeContextProvider> */}
 
-      <UserContextProvider>
+      {/* <UserContextProvider>
         <User/>
       </UserContextProvider>
       <DomRef/>
-      <MutableRef/>
+      <MutableRef/> */}
+      <Counter message='I this' />
 
     
 
