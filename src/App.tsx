@@ -21,17 +21,18 @@ import PersonList from './components/PersonList';
 import { Counter } from './components/class/Counter';
 import { Private } from './components/auth/Private';
 import Profile from './components/auth/Profile';
+import { List } from './components/gemerics/List';
 function App() {
-  // const data=[
-  //   {
-  //     first:"sumanta",
-  //     last:"gorai"
-  //   },
-  //   { first:"subhas",
-  //     last:"Gorai"
-  //   }
+  const data=[
+    {
+      first:"sumanta",
+      last:"gorai"
+    },
+    { first:"subhas",
+      last:"Gorai"
+    }
     
-  // ]
+  ]
  
   return (
     <div className="App">
@@ -57,6 +58,10 @@ function App() {
       <MutableRef/> */}
       <Counter message='I this' />
       <Private isLoggedIn={true} component={Profile} />
+      <List items={['cat','dog','goat','rat','bat']} onClick={(item)=> console.log(item)} />
+
+      <List items={[1,2,3,4,5]} onClick={(item)=> console.log(item)} />
+
 
     </div>
   );
