@@ -26,6 +26,7 @@ import { RandomNumber } from './components/restriction/RandomNumber';
 import { Toast } from './components/templateliterals/Toast';
 import {CustomButton} from './components/html/Button';
 import CustomComponent from './components/html/CustomComponent';
+import Text from './components/polymorphic/Text';
 function App() {
   const data=[
     {
@@ -70,6 +71,9 @@ function App() {
        {/* <Toast position='left-top'/> */}
        <CustomButton variant='primary' onClick={() => console.log("clicked")} >accept only String</CustomButton>
        <CustomComponent name="cat" isLoggedIn />
+       <Text as='label' htmlFor="sidj" placeholder='HI' size='lg'>Heading</Text>  
+       <Text as='p' size='md'>Paragraph</Text>
+       <Text as='label' size='sm' color='secondary'>Label</Text>
 
 
     </div>
